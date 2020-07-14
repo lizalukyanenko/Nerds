@@ -32,18 +32,24 @@
                         <h3>Долго, дорого, скурпулезно.</h3>
                         <p>Математический выверенный дизайн для вашего сайта или мобильного приложения.</p>
                         <a class="button" href="#">Узнать больше</a>
+                        <label for="slider-item-one" class="visually-hidden">1</label>
+                        <input id="slider-item-one" class="visually-hidden" type="radio" name="slider">
                     </li>
                     <li class="slider-item">
                         <h3>Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                         <a class="button" href="#">Узнать больше</a>
+                        <label for="slider-item-two" class="visually-hidden">2</label>
+                        <input id="slider-item-two" class="visually-hidden" type="radio" name="slider">
                     </li>
                     <li class="slider-item">
                         <h3>Только ночь, только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                         <a class="button" href="#">Узнать больше</a>
+                        <label for="slider-item-three" class="visually-hidden">3</label>
+                        <input id="slider-item-three" class="visually-hidden" type="radio" name="slider">
                     </li>
-                </ul> 
+                </ul>
             </section>
 
             <section class="product">
@@ -139,7 +145,7 @@
                     ул. Б. Конюшенная, д. 19/8
                 </p>
                 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <a class="button" href="write.html">Напишите нам</a>
+                <a class="button" href="mailer.html">Напишите нам</a>
             </section>
 
             <section class="social">
@@ -156,9 +162,24 @@
             </section>
         </footer>
 
-        <section class="modal modal-write">
-            <h2>Напишите нам</h2>
-            <button class="modal-close">x</button>
+        <section class="modal modal-mailer">
+            <h2>Напишите нам</h2>            
+            <form class="mailer-form" action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                    <label for="mailer-name">Ваше имя:</label>
+                    <input id="mailer-name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="mailer-email">Ваш e-mail:</label>
+                    <input id="mailer-email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="mailer-text">Текст письма:</label>
+                    <textarea id="mailer-text" name="text" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" aria-label="Закрыть форму">x</button>
         </section>
 
         <script src="js/script.js"></script>
