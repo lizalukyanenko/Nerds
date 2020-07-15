@@ -30,17 +30,20 @@
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
                     <fieldset class="price">
                         <legend>Стоимость:</legend>
-                        <p>
-                            <label for="price-range" class="visually-hidden">Выбрать цену</label>
-                            <input id="price-range" type="range" name="price" multiple min="0" max="15000">
-                        </p>
+                        <div class="skroll">
+                            <div class="range-block">
+                              <div class="range-bar"></div>
+                              <button type="button" class="skroll-min"></button>
+                              <button type="button" class="skroll-max"></button>
+                            </div>
+                        </div>
                         <p>
                             <label for="price-from">от</label>
-                            <input id="price-from" type="text">
+                            <input id="price-from" type="text" name="price-from" value="0">
                         </p>
                         <p>
                             <label for="price-to">до</label>
-                            <input id="price-to" type="text">
+                            <input id="price-to" type="text" name="price-to" value="15000">
                         </p>
                     </fieldset>
                     <fieldset class="grid">
@@ -48,15 +51,15 @@
                         <ul>
                             <li>
                                 <label for="grid-adaptive">Адаптивная</label>
-                                <input id="grid-adaptive" class="visually-hidden" type="radio" name="grid">
+                                <input id="grid-adaptive" class="visually-hidden" type="radio" name="grid" value="adaptive">
                             </li>
                             <li>
                                 <label for="grid-fixed">Фиксированная</label>
-                                <input id="grid-fixed" class="visually-hidden" type="radio" name="grid">
+                                <input id="grid-fixed" class="visually-hidden" type="radio" name="grid" value="fixed">
                             </li>
                             <li>
                                 <label for="grid-rubber">Резиновая</label>
-                                <input id="grid-rubber" class="visually-hidden" type="radio" name="grid">
+                                <input id="grid-rubber" class="visually-hidden" type="radio" name="grid" value="rubber">
                             </li>
                         </ul>                       
                     </fieldset>
@@ -65,23 +68,23 @@
                         <ul>
                             <li>
                                 <label for="features-slider">Слайдер</label>
-                                <input id="features-slider" class="visually-hidden" type="checkbox" name="features">
+                                <input id="features-slider" class="visually-hidden" type="checkbox" name="features" value="slider">
                             </li>
                             <li>
                                 <label for="features-block-advantages">Блок преимуществ</label>
-                                <input id="features-block-advantages" class="visually-hidden" type="checkbox" name="features">
+                                <input id="features-block-advantages" class="visually-hidden" type="checkbox" name="features" value="block-advantage">
                             </li>
                             <li>
                                 <label for="features-news">Новости</label>
-                                <input id="features-news" class="visually-hidden" type="checkbox" name="features">
+                                <input id="features-news" class="visually-hidden" type="checkbox" name="features" value="news">
                             </li>
                             <li>
                                 <label for="features-gallery">Галерея</label>
-                                <input id="features-gallery" class="visually-hidden" type="checkbox" name="features">
+                                <input id="features-gallery" class="visually-hidden" type="checkbox" name="features" value="gallery">
                             </li>
                             <li>
                                 <label for="features-basket">Корзина</label>
-                                <input id="features-basket" class="visually-hidden" type="checkbox" name="features">
+                                <input id="features-basket" class="visually-hidden" type="checkbox" name="features" value="basket">
                             </li>
                         </ul>
                     </fieldset>
@@ -209,7 +212,7 @@
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" type="button" aria-label="Закрыть форму">x</button>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
 
         <script src="js/script.js"></script>
