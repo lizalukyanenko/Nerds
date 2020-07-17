@@ -43,7 +43,7 @@
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                         <a class="button" href="#">Узнать больше</a>
                     </li>
-                </ul> 
+                </ul>
             </section>
 
             <section class="product">
@@ -139,7 +139,7 @@
                     ул. Б. Конюшенная, д. 19/8
                 </p>
                 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <a class="button" href="write.html">Напишите нам</a>
+                <a class="button" href="mailer.html">Напишите нам</a>
             </section>
 
             <section class="social">
@@ -156,9 +156,24 @@
             </section>
         </footer>
 
-        <section class="modal modal-write">
-            <h2>Напишите нам</h2>
-            <button class="modal-close">x</button>
+        <section class="modal modal-mailer">
+            <h2>Напишите нам</h2>            
+            <form class="mailer-form" action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                    <label for="mailer-name">Ваше имя:</label>
+                    <input id="mailer-name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="mailer-email">Ваш e-mail:</label>
+                    <input id="mailer-email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="mailer-text">Текст письма:</label>
+                    <textarea id="mailer-text" name="text" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
 
         <script src="js/script.js"></script>
