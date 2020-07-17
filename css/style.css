@@ -1,3 +1,277 @@
+body{
+    margin: o;
+    padding: 0;
+    
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;   
+    color: #283136;
+    
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+
+    background-color: #eeeeee;    
+    
+    border: 0;
+}
+
+.button:hover,
+.button:focus{
+    background-color: #dfdfdf;
+
+    border: 0;
+}
+
+.button:active{
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #d5d5d5;
+
+    border: 0;
+}
+
+.main-navigation{
+    background-color: #eeeeee;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-logo:hover,
+.nav-logo:focus{
+    opacity: 0.8;
+}
+
+.nav-logo:active{
+    opacity: 0.3;
+}
+
+.nav-list a{
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover,
+.nav-list a:focus{
+    color: #fb565a;
+}
+
+.nav-list a:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-info{
+    background-color: #eeeeee;
+}
+
+.slider-list{
+    list-style: none;
+}
+
+.slider-item h3{
+    font-size: 55px;
+    color: #000000;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.btn-red{
+    color: #ffffff;
+
+    background-color: #fb565a;
+}
+
+.btn-red:hover,
+.btn-red:focus{
+    background-color: #e74246;
+}
+
+.btn-red:active{
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #d7373b;     
+}
+
+.btn-green{
+    color: #ffffff;
+
+    background-color: #00ca74;
+}
+
+.btn-green:hover,
+.btn-green:focus{
+    background-color: #00bc6c;
+}
+
+.btn-green:active{
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #00aa62;
+}
+
+.btn-yellow{
+    color: #ffffff;
+
+    background-color: #efc84a;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus{
+    background-color: #eab534;
+}
+
+.btn-yellow:active{
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #e5a722;
+}
+
+.product-list{
+    list-style: none;
+}
+
+.product-item h3{
+    font-size: 24px;
+    color: #000000;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.about-us .definition{
+    font-size: 45px;
+    color: #000000;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-us h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;     
+}
+
+.about-us ul{
+    list-style: none;
+}
+
+.about-us li::before{
+    content: "\2014";
+    color: #fb565a;
+}
+
+.features-table caption{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.features-list .digit{
+    font-size: 45px;
+    line-height: 10.06px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.features-list .description{
+    line-height: 18px;
+}
+
+.project-list{
+    list-style: none;
+}
+
+.project-item{
+    opacity: 0.2;
+}
+
+.project-item:hover,
+.project-item:focus{
+    opacity: 1;
+}
+
+.project-item:active{
+    opacity: 0.1;
+}
+
+.back-map{
+    background-image: url("img/map.jpg");
+    background-size: 1440px 416px;
+}
+
+.contacts{
+    background-color: #ffffff;
+}
+
+.contacts h2{
+    font-size: 18px;
+    color: #000000;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contacts p,
+.contacts .link-number{
+    color: #666666;
+    line-height: 18px;
+}
+
+.social-link ul{
+    list-style: none;
+}
+
+.social .motto{
+    font-size: 36px;
+    color: #000000;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.social .social-sale{
+    line-height: 22px;
+}
+
+.modal-mailer h2{
+    font-size: 45px;
+    color: #000000;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.mailer-form label{
+    color: #000000;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.mailer-form input,
+.mailer-form textarea{
+    line-height: 18px;
+}
+
+.mailer-form textarea{
+    resize: none;
+    width: 760px;
+    height: 118px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
