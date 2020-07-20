@@ -47,7 +47,26 @@ a{
     background-color: #eeeeee;
 }
 
-.nav-list{
+.main-container h1{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;   
+    color: #000000;
+    text-align: center;
+}
+
+
+.nav-list,
+.slider-list,
+.product-list,
+.about-us ul,
+.project-list,
+.social-link ul,
+.grid ul,
+.features ul,
+.sorting ul,
+.catalog-list,
+.nav-page-list{
     list-style: none;
 }
 
@@ -79,10 +98,6 @@ a{
 
 .slider-info{
     background-color: #eeeeee;
-}
-
-.slider-list{
-    list-style: none;
 }
 
 .slider-item h3{
@@ -143,10 +158,6 @@ a{
     background-color: #e5a722;
 }
 
-.product-list{
-    list-style: none;
-}
-
 .product-item h3{
     font-size: 24px;
     color: #000000;
@@ -165,10 +176,6 @@ a{
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;     
-}
-
-.about-us ul{
-    list-style: none;
 }
 
 .about-us li::before{
@@ -191,10 +198,6 @@ a{
 
 .features-list .description{
     line-height: 18px;
-}
-
-.project-list{
-    list-style: none;
 }
 
 .project-item{
@@ -233,10 +236,6 @@ a{
     line-height: 18px;
 }
 
-.social-link ul{
-    list-style: none;
-}
-
 .social .motto{
     font-size: 36px;
     color: #000000;
@@ -263,6 +262,32 @@ a{
 
 .mailer-form input,
 .mailer-form textarea{
+    color: #000000;
+    line-height: 18px;
+
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+}
+
+.mailer-form input:hover,
+.mailer-form textarea:hover{
+    border: 2px solid #b4b9bb;
+}
+
+.mailer-form input:focus,
+.mailer-form textarea:focus{
+    border: 2px solid #000000;
+}
+
+.mailer-form input:invalid,
+.mailer-form textarea:invalid{
+    color: #e74246;
+
+    border: 2px solid #e74246;
+}
+
+.mailer-form input,
+.mailer-form textarea{
     line-height: 18px;
 }
 
@@ -270,6 +295,70 @@ a{
     resize: none;
     width: 760px;
     height: 118px;
+}
+
+.price,
+.grid,
+.features{
+    border: 0;
+}
+
+.price legend,
+.grid legend,
+.features legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;   
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.price p{
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.price input{
+    line-height: 22px;
+
+    background-color: #eeeeee;
+    border: 0;
+}
+
+.grid li,
+.features li{
+    line-height: 20px;
+}
+
+.sorting h2{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;   
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sorting li{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;   
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.catalog-item a{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;   
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.catalog-item p{
+    line-height: 18px;
+    color: #666666;
+    text-align: center;
 }
 
 .visually-hidden:not(:focus):not(:active),
