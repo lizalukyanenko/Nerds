@@ -138,6 +138,9 @@ a{
 .sorting ul,
 .catalog-list,
 .nav-page-list{
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -467,4 +470,31 @@ input[type="radio"].visually-hidden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+/* ----- Сетка ----- */
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.main-header{
+    margin-top: 49px;
+    margin-bottom: 18px;
+}
+
+.main-navigation{
+    display: flex;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+    width: 100px;
 }
