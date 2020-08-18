@@ -3,19 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Nerds</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
-            <nav>
-                <a href="index.html">
+            <nav class="main-navigation">
+                <a href="index.html" class="nav-logo">
                     <img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65">
                 </a>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">Студия</a></li>
                     <li class="nav-item"><a href="#">Клиенты</a></li>
-                    <li class="nav-item"><a>Магазин</a></li>
+                    <li class="nav-item current-nav"><a>Магазин</a></li>
                     <li class="nav-item"><a href="#">Контакты</a></li>
                     <li class="nav-item"><a href="#">Корзина</a></li>
                 </ul>
@@ -33,8 +34,8 @@
                         <div class="skroll">
                             <div class="range-block">
                               <div class="range-bar"></div>
-                              <button type="button" class="skroll-min"></button>
-                              <button type="button" class="skroll-max"></button>
+                              <button class="skroll-min" type="button">диапазон от</button>
+                              <button class="skroll-max" type="button">диапазон до</button>
                             </div>
                         </div>
                         <p>
@@ -111,49 +112,49 @@
                     <li class="catalog-item">
                         <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">Sedona</a>
+                            <a class="catalog-item-name" href="#">Sedona</a>
                             <p>Информационный сайт для туристов</p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
                         <img src="img/img-pink.jpg" alt="Pink" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">Pink app</a>
+                            <a class="catalog-item-name" href="#">Pink app</a>
                             <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
                         <img src="img/img-barbershop.jpg" alt="Barbershop Borodinski" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">Barbershop</a>
+                            <a class="catalog-item-name" href="#">Barbershop</a>
                             <p>Сайт салона красоты. Для мужчин, да.</p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
                         <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">Mishka</a>
+                            <a class="catalog-item-name" href="#">Mishka</a>
                             <p>Интернет-магазин вязаных игрушек</p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
                         <img src="img/img-aplus.jpg" alt="A plus" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">A plus</a>
+                            <a class="catalog-item-name" href="#">A plus</a>
                             <p>Лендинг курсов повышения квалификации </p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
                         <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
                         <div class="modal-price">
-                            <a href="#">Кваст</a>
+                            <a class="catalog-item-name" href="#">Кваст</a>
                             <p>Промо-сайт производителя крафтового кваса</p>
-                            <a class="button" href="#">9900 руб.</a>
+                            <a class="button button-red button-price" href="#">9900 руб.</a>
                         </div>
                     </li>
                 </ul>
@@ -162,7 +163,7 @@
             <section class="nav-page">
                 <h2 class="visually-hidden">Навигация по страницам</h2>
                 <ul class="nav-page-list">
-                    <li class="nav-page-item"><a class="button" href="#">1</a></li>
+                    <li class="nav-page-item current-page"><a class="button">1</a></li>
                     <li class="nav-page-item"><a class="button" href="#">2</a></li>
                     <li class="nav-page-item"><a class="button" href="#">3</a></li>
                     <li class="nav-page-item"><a class="button" href="#">Следующая</a></li>
@@ -171,16 +172,17 @@
         </main>
 
         <footer class="main-footer">
-            <section class="contacts">
-                <h2>Nёrds design studio</h2>
-                <p>
-                    191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8
-                </p>
-                <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <a class="button" href="mailer.html">Напишите нам</a>
-            </section>
-
+            <div class="back-map">
+                <section class="contacts">
+                    <h2>Nёrds design studio</h2>
+                    <p>
+                        191186, Санкт-Петербург,<br>
+                        ул. Б. Конюшенная, д. 19/8
+                    </p>
+                    <a class="link-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                    <a class="button button-red" href="mailer.html">Напишите нам</a>
+                </section>
+            </div>
             <section class="social">
                 <h2 class="visually-hidden">Социальные сети</h2>
                 <div class="social-link">
@@ -190,7 +192,7 @@
                         <li><a class="social-button" href="#">Instagram</a></li>
                     </ul>
                 </div>
-                <p>Давайте дружить, это выгодно!</p>
+                <p class="motto">Давайте дружить, это выгодно!</p>
                 <p class="social-sale">Скидка 10% для друзей из социальных сетей.</p>  
             </section>
         </footer>
@@ -210,7 +212,7 @@
                     <label for="mailer-text">Текст письма:</label>
                     <textarea id="mailer-text" name="text" placeholder="В свободной форме"></textarea>
                 </p>
-                <button class="button" type="submit">Отправить</button>
+                <button class="button button-red" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
