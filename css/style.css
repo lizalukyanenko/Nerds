@@ -706,6 +706,8 @@ html{
     display: flex;
     justify-content: space-between;
 
+    width: 760px;
+
     margin-bottom: 55px;
 }
 
@@ -714,6 +716,7 @@ html{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sorting ul{
@@ -734,12 +737,21 @@ html{
 }
 
 .catalog{
-    display: flex;
-
     margin-bottom: 60px;
 }
 
+.catalog-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-item{
+    margin-bottom: 33px;
+}
+
 .modal-price{
+    text-align: center;
     background-color: #eeeeee;
 
     width: 360px;
@@ -750,14 +762,10 @@ html{
 
 .modal-price p{
     width: 240px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
 
-.modal-price a{
-    width: 240px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .nav-page-list{
@@ -824,6 +832,8 @@ html{
     margin-bottom: 12px;
 }
 
+/* ----- Сетка modal ----- */
+
 .modal{
     background-color: #ffffff;
     box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
@@ -835,10 +845,10 @@ html{
     padding-bottom: 84px;
 
     width: 960px;
-    min-height: 590px;      
+    min-height: 590px;     
 }
 
-.modal-mailer h2{
+.modal h2{
     margin: 0;
     margin-bottom: 50px;
 }
@@ -855,6 +865,11 @@ html{
 .name-email-wrapper p{
     margin: 0;
     width: 360px;
+}
+
+.mailer-p-wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 .mailer-form input,

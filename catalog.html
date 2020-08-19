@@ -211,14 +211,16 @@
         <section class="modal modal-mailer">
             <h2>Напишите нам</h2>            
             <form class="mailer-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                    <label for="mailer-name">Ваше имя:</label>
-                    <input id="mailer-name" type="text" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="mailer-email">Ваш e-mail:</label>
-                    <input id="mailer-email" type="email" name="email" placeholder="email@example.com">
-                </p>
+                <div class="name-email-wrapper">
+                    <p class="mailer-p-wrapper">
+                        <label for="mailer-name">Ваше имя:</label>
+                        <input id="mailer-name" type="text" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="mailer-p-wrapper">
+                        <label for="mailer-email">Ваш e-mail:</label>
+                        <input id="mailer-email" type="email" name="email" placeholder="email@example.com">
+                    </p>
+                </div>
                 <p>
                     <label for="mailer-text">Текст письма:</label>
                     <textarea id="mailer-text" name="text" placeholder="В свободной форме"></textarea>
