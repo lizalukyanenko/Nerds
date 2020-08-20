@@ -613,7 +613,7 @@ html{
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 125px;
+    margin-bottom: 90px;
 
     width: 1160px;
     min-height: 410px;
@@ -783,6 +783,9 @@ html{
 
 .back-map{
     padding-top: 54px;
+    padding-left: 140px;
+
+    background-position: center;
 }
 
 .contacts{
@@ -791,7 +794,6 @@ html{
     width: 320px;
     min-height: 308px;
 
-    margin-left: 140px;
     padding: 50px;
 }
 
@@ -810,6 +812,7 @@ html{
 .social{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin: 0 auto;
     margin-top: 70px;
