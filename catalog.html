@@ -27,7 +27,7 @@
 
         <main class="main-container">
             <h1>Магазин готовых шаблонов</h1>
-            <div class="container-wrapper">
+            <div class="main-container-wrapper content-wrapper">
                 <aside class="filter">
                     <h2 class="visually-hidden">Фильтр</h2>
                     <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -35,12 +35,12 @@
                             <legend>Стоимость:</legend>
                             <div class="skroll">
                                 <div class="range-block">
-                                <div class="range-bar"></div>
-                                <button class="skroll-min" type="button">диапазон от</button>
-                                <button class="skroll-max" type="button">диапазон до</button>
+                                    <div class="range-bar"></div>
+                                    <button class="skroll-min" type="button">диапазон от</button>
+                                    <button class="skroll-max" type="button">диапазон до</button>
                                 </div>
                             </div>
-                            <div class="price-form-to-wrapper">
+                            <div class="price-from-to-wrapper">
                                 <p>
                                     <label for="price-from">от</label>
                                     <input id="price-from" type="text" name="price-from" value="0">
@@ -51,6 +51,7 @@
                                 </p>
                             </div>
                         </fieldset>
+
                         <fieldset class="grid">
                             <legend>Сетка:</legend>
                             <ul>
@@ -68,6 +69,7 @@
                                 </li>
                             </ul>                       
                         </fieldset>
+
                         <fieldset class="features">
                             <legend>Особенности:</legend>
                             <ul>
@@ -97,7 +99,7 @@
                     </form>
                 </aside>
 
-                <div class="content-wrapper">
+                <div class="catalog-wrapper">
                     <aside class="sorting">
                         <h2>Сортировать:</h2>
                         <div class="sorting-wrapper">
